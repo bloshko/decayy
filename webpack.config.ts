@@ -10,7 +10,7 @@ const config: webpack.Configuration = {
     index: './src/index.ts',
   },
   output: {
-    filename: '[name].[hash].bundle.js',
+    filename: '[name].[contenthash].bundle.js',
     path: path.resolve(__dirname, 'build'),
     clean: true,
   },
@@ -35,7 +35,7 @@ const config: webpack.Configuration = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
+      filename: '[name].[contenthash].css',
       chunkFilename: '[id].css',
     }),
     new HtmlWebpackPlugin({
