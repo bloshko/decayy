@@ -1,0 +1,3 @@
+[submodule "wasm/dsp-rust"]
+	path = wasm/dsp-rust
+	url = https://github.com/bloshko/dsp-rust
